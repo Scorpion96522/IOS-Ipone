@@ -313,7 +313,7 @@ body {
     transition: inherit;
     transition-property: inherit;
     filter: drop-shadow(0 1em 2em hsla(0 0% 0%/var(--shadow-opacity, 0)));
-    transform: scale3d(0 .375, 0.4, 1);
+    transform: scale3d(0.375, 0.4, 1);
     transform-origin: top;
 }
 
@@ -362,4 +362,27 @@ body {
     opacity: var(--bar-opacity, 0);
 }
 
-.content .text:before
+.content .text:before {
+    content: 'MusicArtistName';
+    order: 1;
+    text-transform: uppercase;
+}
+
+.content .text:after {
+    order: 2;
+    content: 'MusicName';
+    opacity: 0.5;
+}
+
+.content .right {
+    flex-grow: 1;
+}
+
+.content .title {
+    background: #1a1ab3;
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 33.3%;
+    position: relative;
+}
+
