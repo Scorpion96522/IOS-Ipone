@@ -182,7 +182,7 @@ body {
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    background: radial-gradient(85% 125% at 50% 140%, black 66.6%, transparent), radial-gradient(120% 120%  at 50% 145%, hsl(calc(var(--g-h) - 45), 100%, 50%) 50% transparent), radial-gradient(150% 100% at 50% 80%, transparent 35%, hsl(calc(var(--g-h) +50), 100%, 99%));
+    background: radial-gradient(85% 125% at 50% 140%, black 66.6%, transparent), radial-gradient(120% 120%  at 50% 145%, hsl(calc(var(--g-h) - 45), 100%, 50%) 50%, transparent), radial-gradient(150% 100% at 50% 80%, transparent 35%, hsl(calc(var(--g-h) + 50), 100%, 99%));
     background-color: hsl(var(--g-h), var(--g-s), var(--g-l));
     transform: scale3d(1.1, 1.25, 1);
     transform-origin: bottom;
@@ -244,7 +244,7 @@ body {
     transition-timing-function: var(--ease-spring); 
 }
 
-.notch-container:hover, .content, .notch-container:focus-within .content {
+.notch-container:hover .content, .notch-container:focus-within .content {
     --content-padding: 2em;
 }
 
@@ -275,7 +275,7 @@ body {
 }
 
 .notch-container:focus-within~.notch-blur {
-    max-height: calc(var(--notch-radius) *5 );
+    max-height: calc(var(--notch-radius) * 5);
     opacity: 1;
 }
 
@@ -396,7 +396,7 @@ body {
     filter: blur(0.05em);
 }
 
-.content .bar{
+.content .bar{ 
     display: flex;
     align-items: center;
     gap: 1em;
